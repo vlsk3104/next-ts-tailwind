@@ -5,4 +5,4 @@ WORKDIR /src
 COPY ./src/package.json ./
 COPY ./src/package-lock.json ./
 
-RUN npm ci
+RUN npm i && npm run dev
